@@ -102,8 +102,8 @@ import GHC.Stack
 import Prelude ((++))
 
 todo :: (?loc :: CallStack) => a
-todo = Prelude.error ("todo...\n\n" ++ prettyCallStack ?loc)
+todo = Prelude.error ("todo...\n" ++ prettyCallStack ?loc)
 
-todoError :: a
-todoError = Prelude.error ("todo - error handling here...\n\n" ++ prettyCallStack ?loc ++ "\n")
+todoError :: (?loc :: CallStack) => a
+todoError = Prelude.error ("todo - error handling here...\n" ++ prettyCallStack ?loc)
 
