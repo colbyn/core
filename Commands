@@ -1,4 +1,9 @@
 command publish do
-  git add .
-  git commit -m "..."
-  git push -u origin master
+  echo "Publishing..."
+  silent do
+    git add .
+    git commit -m "..."
+    git push -u origin master
+    echo "complete"
+  echo "Complete."
+  git --no-pager log --name-status HEAD^..HEAD | grep commit
