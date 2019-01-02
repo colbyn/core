@@ -3,8 +3,6 @@ packages:
 - .
 
 extra-deps:
-- algebraic-graphs-0.3@sha256:0cc77b36358ee813b7bee94ee64e1d064fcc0cba190ebc9ed899e79cc2e19345
-
 # Until this is fixed: https://github.com/brendanhay/amazonka/issues/466
 - git: https://github.com/brendanhay/amazonka.git
   commit: 248f7b2a7248222cc21cef6194cd1872ba99ac5d

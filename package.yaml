@@ -60,16 +60,7 @@ dependencies:
 - case-insensitive
 - base64-bytestring
 - memory
-- algebraic-graphs
 - hspec
-
-flags:
-  llvm-build:
-    default: false
-    manual: false
-  release-build:
-    default: false
-    manual: false
 
 default-extensions:
   - NoImplicitPrelude
