@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5dd2ec58991f358b09d8f5663408727de8aff2e1588609e2e7787da29758ba5f
+-- hash: f2cac4fff0c383cdb50e4add035310708aa9115978b1ac9e968ce9b5707adb72
 
 name:           core
 version:        0.1.0.0
@@ -25,22 +25,13 @@ library
   build-depends:
       JuicyPixels
     , aeson
-    , amazonka
-    , amazonka-dynamodb
-    , amazonka-dynamodb-streams
-    , amazonka-ec2
-    , amazonka-lambda
-    , amazonka-s3
     , async
     , base >=4.7 && <5
     , base64-bytestring
     , binary
     , bytestring
     , case-insensitive
-    , conduit-extra
     , containers
-    , contravariant
-    , contravariant-extras
     , cryptonite
     , deepseq
     , directory
@@ -63,7 +54,6 @@ library
     , primitive
     , process
     , random
-    , resourcet
     , show-prettyprint
     , stm
     , template-haskell

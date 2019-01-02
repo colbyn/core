@@ -16,6 +16,7 @@ dependencies:
 - unix
 - uniplate
 - show-prettyprint
+- wl-pprint-text
 - path
 - path-io
 - time
