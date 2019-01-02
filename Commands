@@ -2,7 +2,7 @@ command publish do
   echo "Publishing..."
   silent do
     git add .
-    git commit -m "..."
+    git commit -m "auto"
     git push -u origin master
     echo "complete"
   echo "Complete."
