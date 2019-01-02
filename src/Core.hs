@@ -1,4 +1,5 @@
 {-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE ImplicitParams #-}
 module Core (
     System.IO.print
   , System.IO.putStrLn
@@ -97,11 +98,12 @@ import Data.Foldable
 import Data.Bifunctor
 import Data.Typeable
 import GHC.Generics
+import GHC.Stack
+import Prelude ((++))
 
-todo :: a
-todo = Prelude.error "todo..."
-
+todo :: (?loc :: CallStack) => a
+todo = Prelude.error ("todo...\n\n" ++ prettyCallStack ?loc)
 
 todoError :: a
-todoError = Prelude.error "todo - error handling here..."
+todoError = Prelude.error ("todo - error handling here...\n\n" ++ prettyCallStack ?loc ++ "\n")
 
